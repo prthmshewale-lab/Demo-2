@@ -11,7 +11,7 @@ const successStories = [
     id: 1,
     name: 'Sarah Jenkins',
     treatment: 'Invisalign & Whitening',
-    quote: "I've always been self-conscious about my smile. The team at SmileCare completely transformed it. The process was smooth, and the results are beyond what I imagined!",
+    quote: "I've always been self-conscious about my smile. The team at Care Smile completely transformed it. The process was smooth, and the results are beyond what I imagined!",
     rating: 5,
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&auto=format&fit=crop',
   },
@@ -178,7 +178,7 @@ export default function Home() {
               Don&apos;t just take our word for it. Hear from our patients about their experiences and smile transformations.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {successStories.map((story, index) => (
               <motion.div
@@ -234,10 +234,10 @@ export default function Home() {
                 Contact our support team <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
-            
+
             <div className="space-y-4">
               {faqs.map((faq, index) => (
-                <div 
+                <div
                   key={index}
                   className="border border-slate-200 rounded-2xl overflow-hidden transition-colors hover:border-emerald-200"
                 >
@@ -271,7 +271,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for your best smile?</h2>
           <p className="text-emerald-100 text-lg max-w-2xl mx-auto mb-10">
-            Join thousands of happy patients who trust SmileCare for their dental needs. Book your appointment today and experience the difference.
+            Join thousands of happy patients who trust Care Smile for their dental needs. Book your appointment today and experience the difference.
           </p>
           <Link
             href="/contact"

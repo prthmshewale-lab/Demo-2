@@ -41,9 +41,9 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-600 text-white">
-            <span className="font-bold text-xl">S</span>
+            <span className="font-bold text-xl">C</span>
           </div>
-          <span className="text-xl font-bold text-slate-900">SmileCare</span>
+          <span className="text-xl font-bold text-slate-900">Care Smile</span>
         </Link>
 
         {/* Desktop nav */}

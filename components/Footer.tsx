@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Globe, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -10,25 +10,22 @@ export default function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-600 text-white">
-                <span className="font-bold text-xl">S</span>
+                <span className="font-bold text-xl">C</span>
               </div>
-              <span className="text-xl font-bold text-white">SmileCare</span>
+              <span className="text-xl font-bold text-white">Care Smile</span>
             </Link>
             <p className="text-sm leading-relaxed text-slate-400">
               Providing exceptional dental care with a gentle touch. Your smile is our top priority.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-slate-400 hover:text-emerald-500 transition-colors">
-                <Facebook className="h-5 w-5" />
+                <Globe className="h-5 w-5" />
               </a>
               <a href="#" className="text-slate-400 hover:text-emerald-500 transition-colors">
-                <Twitter className="h-5 w-5" />
+                <MessageCircle className="h-5 w-5" />
               </a>
               <a href="#" className="text-slate-400 hover:text-emerald-500 transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-slate-400 hover:text-emerald-500 transition-colors">
-                <Linkedin className="h-5 w-5" />
+                <Mail className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -85,14 +82,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-emerald-500 shrink-0" />
-                <span>hello@smilecare.com</span>
+                <span>hello@caresmile.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
-          <p>&copy; {new Date().getFullYear()} SmileCare Dental Clinic. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Care Smile Dental Clinic. All rights reserved.</p>
         </div>
       </div>
     </footer>

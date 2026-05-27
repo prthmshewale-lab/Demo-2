@@ -63,14 +63,14 @@ export default function About() {
           />
         </div>
         <div className="container relative mx-auto px-4 text-center">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="mb-6 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
           >
-            About SmileCare
+            About Care Smile
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -85,7 +85,7 @@ export default function About() {
       <section className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -93,7 +93,7 @@ export default function About() {
             >
               <Image
                 src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=800&auto=format&fit=crop"
-                alt="SmileCare Clinic Interior"
+                alt="Care Smile Clinic Interior"
                 fill
                 className="object-cover"
                 referrerPolicy="no-referrer"
@@ -107,7 +107,7 @@ export default function About() {
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Our Story</h2>
               <div className="space-y-6 text-lg text-slate-600">
                 <p>
-                  Founded in 2010, SmileCare began with a simple mission: to make dental visits something people look forward to, rather than dread.
+                  Founded in 2010, Care Smile began with a simple mission: to make dental visits something people look forward to, rather than dread.
                 </p>
                 <p>
                   We recognized that many people avoid the dentist due to fear or past negative experiences. That&apos;s why we built our practice around patient comfort, transparent communication, and gentle techniques.
@@ -130,7 +130,7 @@ export default function About() {
               These principles guide everything we do, from the moment you walk through our doors to the completion of your treatment.
             </p>
           </div>
-          
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => {
               const Icon = value.icon;

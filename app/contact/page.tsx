@@ -11,7 +11,6 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
@@ -23,14 +22,14 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="bg-emerald-700 py-20 text-white">
         <div className="container mx-auto px-4 text-center">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="mb-6 text-4xl font-extrabold tracking-tight sm:text-5xl"
           >
             Contact Us
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -80,7 +79,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-900">Email Us</h3>
-                    <p className="text-slate-600 mt-1">hello@smilecare.com<br />appointments@smilecare.com</p>
+                    <p className="text-slate-600 mt-1">hello@caresmile.com<br />appointments@caresmile.com</p>
                   </div>
                 </div>
 
@@ -104,9 +103,9 @@ export default function Contact() {
             <div className="lg:col-span-3">
               <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-slate-100">
                 <h3 className="text-2xl font-bold text-slate-900 mb-6">Send us a Message</h3>
-                
+
                 {isSubmitted ? (
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     className="bg-emerald-50 border border-emerald-200 rounded-2xl p-8 text-center"
@@ -118,7 +117,7 @@ export default function Contact() {
                     <p className="text-slate-600">
                       Thank you for reaching out. A member of our team will get back to you shortly.
                     </p>
-                    <button 
+                    <button
                       onClick={() => setIsSubmitted(false)}
                       className="mt-6 text-emerald-600 font-medium hover:text-emerald-700"
                     >
@@ -130,9 +129,9 @@ export default function Contact() {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <label htmlFor="firstName" className="text-sm font-medium text-slate-700">First Name</label>
-                        <input 
-                          type="text" 
-                          id="firstName" 
+                        <input
+                          type="text"
+                          id="firstName"
                           required
                           className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors"
                           placeholder="John"
@@ -140,9 +139,9 @@ export default function Contact() {
                       </div>
                       <div className="space-y-2">
                         <label htmlFor="lastName" className="text-sm font-medium text-slate-700">Last Name</label>
-                        <input 
-                          type="text" 
-                          id="lastName" 
+                        <input
+                          type="text"
+                          id="lastName"
                           required
                           className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors"
                           placeholder="Doe"
@@ -153,9 +152,9 @@ export default function Contact() {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <label htmlFor="email" className="text-sm font-medium text-slate-700">Email Address</label>
-                        <input 
-                          type="email" 
-                          id="email" 
+                        <input
+                          type="email"
+                          id="email"
                           required
                           className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors"
                           placeholder="john@example.com"
@@ -163,9 +162,9 @@ export default function Contact() {
                       </div>
                       <div className="space-y-2">
                         <label htmlFor="phone" className="text-sm font-medium text-slate-700">Phone Number</label>
-                        <input 
-                          type="tel" 
-                          id="phone" 
+                        <input
+                          type="tel"
+                          id="phone"
                           className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors"
                           placeholder="(555) 123-4567"
                         />
@@ -174,8 +173,8 @@ export default function Contact() {
 
                     <div className="space-y-2">
                       <label htmlFor="service" className="text-sm font-medium text-slate-700">Service of Interest</label>
-                      <select 
-                        id="service" 
+                      <select
+                        id="service"
                         className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors"
                       >
                         <option value="">Select a service...</option>
@@ -189,8 +188,8 @@ export default function Contact() {
 
                     <div className="space-y-2">
                       <label htmlFor="message" className="text-sm font-medium text-slate-700">Message</label>
-                      <textarea 
-                        id="message" 
+                      <textarea
+                        id="message"
                         rows={4}
                         required
                         className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors resize-none"
@@ -198,8 +197,8 @@ export default function Contact() {
                       ></textarea>
                     </div>
 
-                    <button 
-                      type="submit" 
+                    <button
+                      type="submit"
                       disabled={isSubmitting}
                       className="w-full py-4 rounded-xl bg-emerald-600 text-white font-bold text-lg hover:bg-emerald-700 transition-colors disabled:opacity-70 flex items-center justify-center"
                     >
