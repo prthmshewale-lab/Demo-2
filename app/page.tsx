@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'motion/react';
-import { CheckCircle2, Star, ChevronDown, ChevronUp, ArrowRight } from 'lucide-react';
+import { CircleCheck as CheckCircle2, Star, ChevronDown, ChevronUp, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 
 const successStories = [
